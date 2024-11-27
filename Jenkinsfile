@@ -1,4 +1,4 @@
-pipeline {
+]pipeline {
     agent any
 
     environment {
@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/YourRepo/devops_project.git'
+                git 'https://github.com/GuilhermeGaffuri/devOpsTrabalho.git'
             }
         }
 
