@@ -26,7 +26,7 @@ pipeline {
                     // Cria o ambiente virtual Python
                     sh 'python3 -m venv $VENV_DIR'
                     // Ativa o ambiente virtual
-                    sh 'source $VENV_DIR/bin/activate'
+                    sh '. $VENV_DIR/bin/activate'
                     // Instala as dependências do Flask (ou outras dependendo do seu projeto)
                     sh 'pip install -r flask/requirements.txt'
                 }
